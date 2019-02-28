@@ -3,8 +3,7 @@
  */
 package rules;
 
-//some modifications
-
+//some 
 /**
  * RulesOf6005 represents the collaboration policy of 6.005 as described by the
  * general information on Stellar.
@@ -38,9 +37,12 @@ public class RulesOf6005 {
             boolean availableToOthers, boolean writtenAsCourseWork,
             boolean citingYourSource, boolean implementationRequired) {
         
-        // TODO: Fill in this method, then remove the exception
+     
         
-        throw new RuntimeException("implement me!");
+            if(writtenByYourself==true && availableToOthers==false && writtenAsCourseWork==true && writtenAsCourseWork==true && citingYourSource==true && implementationRequired==true)
+            	return true;
+            else
+            	return false;
     }
     
     /**
