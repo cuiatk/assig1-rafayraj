@@ -159,6 +159,8 @@ public class TurtleSoup {
         turtle.draw();
         
         drawRegularPolygon(turtle,5, 60);
+        drawPersonalArt(turtle);
+       
         turtle.draw();
         
         
