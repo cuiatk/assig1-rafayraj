@@ -157,6 +157,11 @@ public class TurtleSoup {
 
         // draw the window
         turtle.draw();
+        
+        drawRegularPolygon(turtle,5, 60);
+        turtle.draw();
+        
+        
     }
 
 }
