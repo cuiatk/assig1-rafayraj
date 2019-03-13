@@ -5,7 +5,6 @@ package turtle;
 
 import java.util.List;
 import java.util.ArrayList;
-
 public class TurtleSoup {
 
     /**
@@ -21,7 +20,11 @@ public class TurtleSoup {
              turtle.turn(90.0);
          }
     }
-
+    
+   
+   
+    
+ 
     /**
      * Determine inside angles of a regular polygon.
      * 
@@ -63,7 +66,7 @@ public class TurtleSoup {
     	for(int x = sides; x > 0; x--)
     	{
             turtle.forward(sideLength);
-            turtle.turn(180.0 - calculateRegularPolygonAngle(sides));
+            turtle.turn(60.0 - calculateRegularPolygonAngle(sides));
         }
     }
 
@@ -128,7 +131,9 @@ public class TurtleSoup {
      * 
      * @param turtle the turtle context
      */
-    public static void drawPersonalArt(Turtle turtle) {
+    
+    //PEROSNAL ART ROSE
+    public static void Rose(Turtle turtle) {
     	int sides = 5;
         int sideLength = 100;
         for(int x = sides; x > 0; x--)
@@ -139,8 +144,12 @@ public class TurtleSoup {
             }
             drawRegularPolygon(turtle, 5, 50);
             turtle.forward(sideLength);
-            turtle.turn(180.0 - calculateRegularPolygonAngle(sides));
+            turtle.turn(60.0 - calculateRegularPolygonAngle(sides));
+            
+              	
+              
         }
+    
     }
 
     /**
@@ -153,13 +162,12 @@ public class TurtleSoup {
     public static void main(String args[]) {
         DrawableTurtle turtle = new DrawableTurtle();
 
-        drawSquare(turtle, 40);
 
         // draw the window
         turtle.draw();
         
         drawRegularPolygon(turtle,5, 60);
-        drawPersonalArt(turtle);
+        Rose(turtle);
        
         turtle.draw();
         
