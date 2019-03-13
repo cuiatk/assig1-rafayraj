@@ -9,7 +9,7 @@ public class TurtleSoup {
 
     /**
      * Draw a square.
-     * 
+     * c
      * @param turtle the turtle context
      * @param sideLength length of each side
      */
